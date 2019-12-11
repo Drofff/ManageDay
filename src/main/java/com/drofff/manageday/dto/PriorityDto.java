@@ -2,8 +2,6 @@ package com.drofff.manageday.dto;
 
 import javax.persistence.Id;
 
-import com.drofff.manageday.entity.RGBColor;
-
 public class PriorityDto {
 
 	@Id
@@ -11,7 +9,7 @@ public class PriorityDto {
 
 	private int priorityLevel;
 
-	private RGBColor color;
+	private String htmlColor;
 
 	public Long getId() {
 		return id;
@@ -29,12 +27,11 @@ public class PriorityDto {
 		this.priorityLevel = priorityLevel;
 	}
 
-	public RGBColor getColor() {
-		return color;
+	public String getHtmlColor() {
+		return htmlColor;
 	}
 
-	public void setColor(RGBColor color) {
-		this.color = color;
+	public void setHtmlColor(String htmlColor) {
+		this.htmlColor = htmlColor;
 	}
-
 }

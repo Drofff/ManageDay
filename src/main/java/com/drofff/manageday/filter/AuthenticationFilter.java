@@ -23,9 +23,7 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 	private static final Logger LOG = LoggerFactory.getLogger(AuthenticationFilter.class);
 
 	private static final String JSON_CONTENT_TYPE = "application/json";
-	private static final String INVALID_CREDENTIALS_MESSAGE_JSON = "{" +
-			" message : 'Provided credentials are invalid' " +
-			"}";
+	private static final String INVALID_CREDENTIALS_MESSAGE_JSON = "{ \"message\" : \"Provided credentials are invalid\" }";
 
 	private final JwtUtils jwtUtils;
 
